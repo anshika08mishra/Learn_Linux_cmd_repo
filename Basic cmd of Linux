@@ -19,6 +19,10 @@ ls -la
     - It is used to display all files and directories, including hidden files, in a detailed (long listing) format.
     - Output: Shows file permissions, owner, group, size, modification date, and file name for all files and directories, including hidden ones.
 
+clear
+    - clear is used to clear the terminal screen and remove previously displayed commands and output.
+    - 💡 Tip: The shortcut Ctrl + L performs the same action as the clear command in most Linux terminals.
+
 mkdir
     - It is used to is used to create a new directory (folder) in Linux.
     - mkdir foldername
@@ -81,10 +85,37 @@ rm
    -💡 Common Uses:
             - Delete a file: rm notes.txt
             - Delete multiple files:  rm file1.txt file2.txt
-            - Delete an empty directory:  rm -d myfolder
+            - Delete an empty directory:  rm -d myfolder or rmdir
             - Delete a directory and its contents:  rm -r myfolder
             - Force delete without confirmation:  rm -f file.txt
             - ⚠️ Warning: rm permanently deletes files. There is no recycle bin/trash by default.
+
+cp
+   - cp (Copy) is used to copy files and directories from one location to another.
+   - Syntax: cp source destination
+   - Example: cp file.txt backup.txt
+   - Output: Creates a copy of file.txt named backup.txt.
+   -💡 Common Uses:
+            - Copy a file:  cp file.txt Documents/
+            - Copy multiple files:  cp file1.txt file2.txt Documents/
+            - Copy a directory:  cp -r myfolder Backup/
+            - Note: -r (recursive) is required when copying directories.
+
+wc
+   - wc (Word Count) is used to count the number of lines, words, and characters in a file.
+   - Syntax: wc filename
+   - Example: wc notes.txt
+   - Output: 5 20 120 notes.txt
+        - This means: 5 → Lines, 20 → Words, 120 → Characters
+   -💡 Common Uses:
+            - Count lines only:  wc -l notes.txt
+            - Count words only:  wc -w notes.txt    
+            - Count characters only:  wc -c notes.txt
+
+
+cut -b
+
+
    
   
 
