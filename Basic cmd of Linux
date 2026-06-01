@@ -1,5 +1,24 @@
 date
+   - It is used to display the current system date and time.
+
 ls
-mkdir
+   - It is used to display the files and directories present in the current directory.
+
 ls -l
+   - It is used to display files and directories in a detailed (long listing) format.
+   - Output: Shows file permissions, number of links, owner, group, file size, modification date, and file name.
+
+ls -a
+   - It is used to display all files and directories, including hidden files (those starting with .).
+   - . means Hidden files;
+   - Output: Shows all files and folders, including hidden files like .bashrc and .profile.
+
+mkdir
+    - It is used to is used to create a new directory (folder) in Linux.
+    - mkdir foldername
+
 pwd
+    - (Print Working Directory) is used to display the full path of the current directory.
+    - /home/anshika/Documents ( This shows the current directory where you are working.)
+
+
