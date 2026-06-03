@@ -120,27 +120,50 @@ tee
 sort
 
 diff
+
+
 vi or vim
+
 df
+
 df -h
+
 less
+
 more
+
 zcat
+
 tail
+
 tail -f
+
 head
+
 softlink
+
 hardlink
+
 ssh
+
 top
+
 q
+
 ps
+
 fuser
+
 kill
+
 free
+
 nohup
+
 head -n
+
 vmstat
+
 vmstat -a
 
 
