@@ -112,14 +112,55 @@
         - Count words only:  ```wc -w notes.txt```  `  
         - Count characters only:  ```wc -c notes.txt```
 
-
 ## cut -b
+   - It is used to extract specific bytes (characters) from each line of a file or text.
+   - Syntax: ```cut -b position filename```
+   - Example: "Extract first character" ```echo "Linux" | cut -b 1```
+   - Output: L
+   - "Extract first 3 characters" ```echo "Linux" | cut -b 1-3```
+   - Output: Lin
+   - "Extract specific characters" ```echo "Linux" | cut -b 2,4```
+   - Output: iu (2nd and 4th characters)
+   - Extract from a file
+   - Suppose names.txt contains: Anshika Rahul Priya
+   - Command: ```cut -b 1-3 names.txt```
+   - Output: Ans Rah Pri
+   - ```cut -b``` extracts specific bytes (characters) from each line of a file or text.
 
-tee
+## tee
+   - It is used to display output on the terminal and save it to a file at the same time.
+   - Syntax: ```command | tee filename```
+   - Example: "Extract first character" ```echo "Hello Linux" | tee file.txt```
+   - Output: Hello Linux
+   - Saved in file.txt: Hello Linux
+   - Example 2: Save Command Output ```ls | tee files.txt```
+   - This:
+        - Displays the list of files on the screen
+        - Saves the same output to files.txt
+   - Append to a File -> Use -a option: ```echo "New Line" | tee -a file.txt```
+        - This adds content to the end of the file instead of overwriting it.
 
-sort
+## sort
+   - sort is used to arrange lines of text in alphabetical or numerical order.
+   - Syntax: ```sort filename```
+   - Example: Alphabetical Sorting
+       - Suppose names.txt contains:
+          - Rahul
+          - Anshika
+          - Priya
+   - Command: ```sort names.txt```
+   - Output: Anshika
+             Priya
+             Rahul 
+  - | Command | Purpose |
+    |---------|---------|
+    | `sort file.txt` | Sort alphabetically |
+    | `sort -n file.txt` | Sort numerically |
+    | `sort -r file.txt` | Reverse order |
+    | `sort -u file.txt` | Remove duplicate lines |
 
-diff
+
+## diff
 
 
 vi or vim
