@@ -161,11 +161,40 @@
 
 
 ## diff
+   - Compares two files line by line and shows the differences.
+   - Syntax: ```diff [options] file1 file2```
+   - Example: ```diff file1.txt file2.txt```
+   - Sample Output Meaning: ```2c2
+                           < Hello
+                             ---
+                           > Hello World
+                             - ```
+   - ```2c2``` → line 2 changed
+   - ```<``` → content from first file
+   - ```>``` → content from second file
+   - Useful Options:
+        - ```-u``` → unified format (easy to read)
+        - ```-i``` → ignore case differences
+        - ```-w``` → ignore whitespace
 
 
-vi or vim
+## vi or vim
+   - A terminal-based text editor used to create and edit files in Linux.
+   - Syntax: ```vi file_name``` or ```vim file_name```
+   - Example: ```vi notes.txt```
+   - Basic Modes:
+       - Normal Mode → Default mode (navigation, commands)
+       - Insert Mode → Type/edit text (```press i```)
+       - Command Mode → ```Save/quit``` (press Esc then use commands)
+   - Common Commands:
+       - ```i``` → Enter insert mode
+       - ```Esc``` → Back to normal mode
+       - ```:w``` → Save file
+       - ```:q``` → Quit
+       - ```:wq``` → Save and quit
+       - ```:q!``` → Quit without saving
 
-df
+## df
 
 df -h
 
