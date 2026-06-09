@@ -195,10 +195,32 @@
        - ```:q!``` → Quit without saving
 
 ## df
+   - Shows disk space usage of file systems (used, available, and total space).
+   - Syntax: ```df [options] [file_system]```
+   - Example: ```df -h```
+   - Sample Output (simplified):
+         ```Filesystem      Size  Used  Avail  Use%  Mounted on
+              /dev/sda1        50G   20G   28G    42%   / ```
+   - Useful Options:
+       - ```-h``` → Human-readable format (KB, MB, GB) ✅
+       - ```-T``` → Display file system type
+       - ```-a``` → Show all file systems
 
-df -h
 
-less
+## less
+   - Displays file content one screen at a time (scrollable viewer).
+   - Syntax: ```less file_name```
+   - Example: ```less log.txt```
+   - Basic Navigation:
+        - ```↑ / ↓``` → Move line by line
+        - ```Space``` → Next page
+        - ```b``` → Previous page
+        - ```/text``` → Search for text
+        - ```q``` → Quit
+   - Useful Options:
+       - ```-N``` → Show line numbers
+       - ```-i``` → Ignore case in search
+   - less = view large files easily with scrolling and search
 
 more
 
