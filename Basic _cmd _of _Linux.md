@@ -222,7 +222,20 @@
        - ```-i``` → Ignore case in search
    - less = view large files easily with scrolling and search
 
-more
+## more
+   - Displays file content one screen at a time (scrollable viewer).
+   - Syntax: ```less file_name```
+   - Example: ```less log.txt```
+   - Basic Navigation:
+        - ```↑ / ↓``` → Move line by line
+        - ```Space``` → Next page
+        - ```b``` → Previous page
+        - ```/text``` → Search for text
+        - ```q``` → Quit
+   - Useful Options:
+       - ```-N``` → Show line numbers
+       - ```-i``` → Ignore case in search
+   - less = view large files easily with scrolling and search
 
 zcat
 
