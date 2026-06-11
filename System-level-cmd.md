@@ -21,6 +21,17 @@
        - ```load average``` → System load (last 1, 5, 15 minutes)
     
 ## Date
+   - Displays or sets the system date and time.
+   - Syntax: ```date [options]```
+   - Example: ```date```
+   - Sample Output: ```Thu Jun 11 10:45:30 IST 2026```
+   - Output Meaning:
+       - ```+%Y-%m-%d``` → Custom format (Year-Month-Day)
+       - ```+%H:%M:%S``` → Time format (Hour:Minute:Second)
+       - ```-u``` → Show UTC time
+    - Example with Formate: ```date "+%Y-%m-%d %H:%M:%S"```
+
+
 ## who, whoami
 ## which
 ## id
