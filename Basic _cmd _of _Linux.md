@@ -237,17 +237,43 @@
        - ```-i``` → Ignore case in search
    - less = view large files easily with scrolling and search
 
-zcat
+## zcat
+   - Displays the contents of a compressed .gz file without extracting it.
+   - Syntax: ```zcat file_name.gz```
+   - Example: ```zcat logs.gz```
+   - How It Works:
+        - Reads .gz (gzip) compressed files
+        - Outputs content directly to terminal
 
-tail
+## tail
+   - Displays the last part (end) of a file.
+   - Syntax: ```tail [options] file_name```
+   - Example: ```tail log.txt```
+   - Sample Output (last 10 lines by default): line 91 t0 100
+   - Useful Options:
+        - ```-n 5``` → Show last 5 lines -> ```tail -n 5 log.txt```
+        - ```-f``` → Follow file in real-time (useful for logs) -> ```tail -f log.txt```
 
-tail -f
+## head
+   - Displays the first part (beginning) of a file.
+   - Syntax: ```head [options] file_name```
+   - Example: ```head file.txt```
+   - Sample Output (first 10 lines by default): line 1 t0 10
+   - Useful Options:
+        - ```-n 5``` → Show first 5 lines -> ```head -n 5 log.txt```
 
-head
+## softlink
+   - A soft link is a shortcut (reference) to another file or directory.
+   - Syntax: ```ln -s target_file link_name```
+   - Example: ```ln -s file.txt shortcut.txt``` -> ```shortcut.txt``` now points to ```file.txt```
+   - Key Points:
+        - Works like a shortcut 
+        - Can link across different file systems
+        - If original file is deleted → link becomes broken
+   - Check Soft Link: ```ls -l```
+   - Output shows -> indicating link: ```shortcut.txt -> file.txt```
 
-softlink
-
-hardlink
+## hardlink
 
 ssh
 
